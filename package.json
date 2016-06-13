@@ -2,9 +2,11 @@
   "name": "universalmusic",
   "version": "1.0.0",
   "description": "An application built using Angular 2 and Electron to create a single music library that holds all of your music from different web applications such as Soundcloud and Youtube.",
-  "main": "app/index.js",
+  "main": "app/index.ts",
   "scripts": {
-    "test": "electron ."
+    "test": "electron .",
+    "postinstall": "typings install"
+  }
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,8 @@
   "homepage": "https://github.com/frankievx/universalmusic#readme",
   "devDependencies": {
     "electron-prebuilt": "^1.2.2"
+  },
+  "dependencies": {
+    "angular2": "^2.0.0-beta.17"
   }
 }
